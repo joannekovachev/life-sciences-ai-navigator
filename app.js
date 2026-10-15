@@ -10,6 +10,39 @@
   /* Data                                                               */
   /* ------------------------------------------------------------------ */
 
+  const LEARN = 'https://learn.microsoft.com/en-us/';
+  const TECH_LINKS = {
+    'Microsoft 365 Copilot': LEARN + 'microsoft-365/copilot/microsoft-365-copilot-overview',
+    'Copilot Cowork': LEARN + 'microsoft-365/copilot/cowork/',
+    'Researcher and Analyst agents': LEARN + 'microsoft-365/copilot/researcher-agent',
+    'Work IQ': 'https://jgardn22.github.io/work-iq-whiteboard/',
+    'Microsoft Graph': LEARN + 'graph/overview',
+    'Copilot Studio': LEARN + 'microsoft-copilot-studio/',
+    'Multi-agent orchestration': LEARN + 'microsoft-copilot-studio/authoring-add-other-agents',
+    'Microsoft Foundry': LEARN + 'azure/foundry/',
+    'Power Automate': LEARN + 'power-automate/',
+    'Dataverse': LEARN + 'power-apps/maker/data-platform/data-platform-intro',
+    'Microsoft Entra': LEARN + 'entra/',
+    'Microsoft Purview': LEARN + 'purview/',
+    'Microsoft Defender': LEARN + 'defender-xdr/',
+    'Agent governance and identity': LEARN + 'microsoft-agent-365/overview',
+    'Dynamics 365': LEARN + 'dynamics365/',
+    'Power Apps': LEARN + 'power-apps/',
+    'Power BI': LEARN + 'power-bi/',
+    'Azure AI services': LEARN + 'azure/foundry/',
+    'GitHub Copilot': 'https://docs.github.com/en/copilot',
+    'VS Code': 'https://code.visualstudio.com/docs',
+    'Azure MCP Server': LEARN + 'azure/developer/azure-mcp-server/overview',
+    'Azure AI Search': LEARN + 'azure/search/',
+    'Foundry Models': LEARN + 'azure/foundry/foundry-models/concepts/models-sold-directly-by-azure',
+    'Semantic Kernel': LEARN + 'semantic-kernel/overview/',
+    'Agent Framework': LEARN + 'agent-framework/overview/',
+    'AI Toolkit': LEARN + 'windows/ai/toolkit/',
+    'Content Safety': LEARN + 'azure/ai-services/content-safety/overview'
+  };
+  const techChip = (t) => TECH_LINKS[t]
+    ? `<a class="chip chip-link" href="${TECH_LINKS[t]}" target="_blank" rel="noopener noreferrer">${t}<span class="sr-only"> (opens in a new tab)</span></a>`
+    : `<span class="chip">${t}</span>`;
   const STAGES = [
     {
       short: 'Assistants',
@@ -79,7 +112,7 @@
         'Finance operations: reconciliations and close support',
         'Legal assist and compliance triage'
       ],
-      tech: ['Copilot Studio', 'Multi-agent orchestration', 'Microsoft Foundry', 'Power Automate', 'Dataverse', 'Entra, Purview, and Defender', 'Agent governance and identity'],
+      tech: ['Copilot Studio', 'Multi-agent orchestration', 'Microsoft Foundry', 'Power Automate', 'Dataverse', 'Microsoft Entra', 'Microsoft Purview', 'Microsoft Defender', 'Agent governance and identity'],
       value: 'Process-level redesign: shorter cycle times, higher service levels, extended coverage, and people redeployed to higher-value work. Requires governance maturity.',
       role: 'Governor of agent teams',
       aiRole: 'Agent team running the process',
@@ -254,7 +287,7 @@
               <section class="detail"><h4>Where AI participates</h4><p>${s.participates}</p></section>
               <section class="detail"><h4>Expected business value</h4><p>${s.value}</p></section>
               <section class="detail uses"><h4>Typical life sciences use cases</h4><ul>${s.uses.map(u => `<li>${u}</li>`).join('')}</ul></section>
-              <section class="detail tech"><h4>Technologies involved</h4><div class="chips">${s.tech.map(t => `<span class="chip">${t}</span>`).join('')}</div></section>
+              <section class="detail tech"><h4>Technologies involved</h4><div class="chips">${s.tech.map(techChip).join('')}</div></section>
             </div>
           </div>
         </div>

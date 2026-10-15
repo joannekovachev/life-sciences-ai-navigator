@@ -992,3 +992,9 @@ h1 { font-size: clamp(2.2rem, 4.4vw, 3.9rem); line-height: 1.05; letter-spacing:
 .tm-variants button { border: 0; background: transparent; padding: 10px 16px; min-height: 44px; border-radius: 999px; font: inherit; font-size: .86rem; font-weight: 650; color: var(--muted); cursor: pointer; transition: background .25s, color .25s; }
 .tm-variants button[aria-checked="true"] { background: linear-gradient(120deg, var(--s1), var(--s2)); color: #fff; }
 :root[data-theme="dark"] .tm-variants button[aria-checked="true"] { color: #06101f; }
+
+/* Technology chips that link to documentation */
+a.chip-link { text-decoration: none; color: inherit; cursor: pointer; }
+a.chip-link::after { content: '\2197'; margin-left: 5px; font-size: .8em; opacity: .7; }
+a.chip-link:hover { text-decoration: underline; border-color: currentColor; }
+a.chip-link:focus-visible { outline: 3px solid var(--s1); outline-offset: 2px; }
