@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>The Life Sciences AI Transformation Navigator</title>
+  <meta name="description" content="An interactive guide to AI in your flow of work: from AI assistants, to delegation, to agentic teams, to AI inside business applications in life sciences.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f2f5fc" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#070b16" media="(prefers-color-scheme: dark)">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f6cbd'/%3E%3Ccircle cx='9' cy='16' r='3' fill='%23fff'/%3E%3Ccircle cx='16' cy='16' r='3' fill='%23c9bcff'/%3E%3Ccircle cx='23' cy='16' r='3' fill='%2381ecdc'/%3E%3C/svg%3E">
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('hain-theme');
+        var dark = saved ? saved === 'dark' : true;
+        document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css?v=1">
+</head>
+<body>
+  <a class="skip-link" href="#slides">Skip to main content</a>
+  <div class="ambient" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+  <header class="topbar" id="topbar">
+    <a class="brand" href="#top" aria-label="Life Sciences AI Transformation Navigator, back to top">
+      <span class="brand-mark" aria-hidden="true"><i class="s1"></i><i class="s2"></i><i class="s3"></i><i class="s4"></i></span>
+      <span class="brand-text">Life Sciences AI Navigator</span>
+    </a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#top" data-nav="top">Welcome</a>
+      <a href="#journey" data-nav="journey">AI Patterns</a>
+      <a href="#explorer" data-nav="explorer">Use Case Explorer</a>
+      <a href="#teams" data-nav="teams">Agent Teams</a>
+      <a href="#takeaway" data-nav="takeaway">Takeaway</a>
+      <a href="#resources" data-nav="resources">Learning Resources</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false" aria-label="Switch to dark mode">
+      <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.6M12 18.9v2.6M2.5 12h2.6M18.9 12h2.6M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8"/></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.6 8.6 0 0 1 9.8 3.5a8.6 8.6 0 1 0 10.7 10.7z"/></svg>
+      <span class="theme-label" id="themeLabel">Dark</span>
+    </button>
+  </header>
+
+  <main id="slides" aria-label="Presentation slides">
+    <!-- HERO -->
+    <section class="screen hero" id="top" data-label="Welcome" tabindex="-1" aria-labelledby="heroTitle">
+      <div class="container wide hero-grid">
+        <p class="eyebrow reveal">Life Sciences</p>
+        <h1 id="heroTitle" class="reveal">The Life Sciences <span class="grad">AI Transformation Navigator</span></h1>
+        <p class="subtitle reveal">An Interactive Guide to AI in Your Flow of Work</p>
+        <p class="lede reveal"><strong>The right agentic pattern shifts your operating model toward people.</strong> Explore the five ways AI can join your flow of work.</p>
+        <div class="shift reveal" role="group" aria-label="The operating model shift">
+          <div class="shift-col people"><span class="shift-k">People focus on</span><b>High-value work that needs real expertise</b></div>
+          <div class="shift-mid" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 9h13M14 5l4 4-4 4M19 15H6M10 11l-4 4 4 4"/></svg></div>
+          <div class="shift-col ai"><span class="shift-k">AI takes on</span><b>Low-value work that still needs coordination</b></div>
+        </div>
+        <div class="cta-row reveal">
+          <a class="btn primary" href="#journey">Start the journey</a>
+          <a class="btn ghost" href="#explorer">Explore the use cases</a>
+        </div>
+
+
+        <div class="hero-track reveal" role="img" aria-label="The flow from Pattern 1 AI assistants, to Pattern 2 delegation, to Pattern 3 agentic teams, to Pattern 4 AI inside business applications, to Pattern 5 custom AI built by professional developers">
+          <div class="track-line"><span></span></div>
+          <ol class="track-nodes">
+            <li class="s1"><b>1</b><span>Assistants</span></li>
+            <li class="s2"><b>2</b><span>Delegation</span></li>
+            <li class="s3"><b>3</b><span>Agentic teams</span></li>
+            <li class="s4"><b>4</b><span>In the app</span></li>
+            <li class="s5"><b>5</b><span>Custom build</span></li>
+          </ol>
+          <div class="track-ends">
+            <span>AI beside the individual</span>
+            <span>AI inside systems of record, and custom builds</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOURNEY -->
+    <section class="screen" id="journey" data-label="AI Patterns" tabindex="-1" aria-labelledby="journeyTitle">
+      <div class="container wide">
+        <header class="section-head reveal">
+          <p class="eyebrow">The flow of AI in work</p>
+          <h2 id="journeyTitle">Five patterns of AI in your flow of work</h2>
+          <p class="section-lede">From AI that helps one person, to AI built into your business applications, to AI your own developers build. Hover or tap a pattern to open it.</p>
+        </header>
+
+        <div class="rail reveal" id="rail" role="group" aria-label="AI pattern selector">
+          <div class="rail-axis"><span>Individual work</span><span>Enterprise systems and custom builds</span></div>
+          <div class="rail-track">
+            <div class="rail-line"><span id="railFill"></span></div>
+            <div id="railNodes"></div>
+          </div>
+        </div>
+
+        <div class="stages" id="stages"></div>
+      </div>
+    </section>
+
+    <!-- EXPLORER -->
+    <section class="screen" id="explorer" data-label="Use Case Explorer" tabindex="-1" aria-labelledby="explorerTitle">
+      <div class="container wide ex-wrap">
+        <header class="section-head ex-head reveal">
+          <p class="eyebrow">Use case explorer</p>
+          <h2 id="explorerTitle">Find the use cases that fit your work</h2>
+          <p class="section-lede">Filter by audience (biopharma or medtech), line of business, and AI pattern. The use cases below update as you choose.</p>
+        </header>
+
+        <div class="explorer reveal">
+          <aside class="ex-filters glass" aria-label="Filters">
+            <div class="f-block">
+              <h3 class="f-label" id="fAud">Audience</h3>
+              <div class="track-filter" id="trackFilter" role="radiogroup" aria-labelledby="fAud">
+                <button type="button" role="radio" aria-checked="true" data-track="all">All</button>
+                <button type="button" role="radio" aria-checked="false" data-track="pharma">Biopharma</button>
+                <button type="button" role="radio" aria-checked="false" data-track="medtech">MedTech</button>
+              </div>
+            </div>
+
+            <div class="f-block">
+              <label class="f-label" for="ucSearch">Search</label>
+              <input class="f-search" type="search" id="ucSearch" placeholder="Search use cases" autocomplete="off">
+            </div>
+
+            <div class="f-block f-lob">
+              <h3 class="f-label" id="fLob">Line of business <span class="f-hint" id="domainCount"></span></h3>
+              <select class="f-select" id="lobSelect" aria-labelledby="fLob"></select>
+              <div class="domain-list" id="domainTabs" role="radiogroup" aria-labelledby="fLob"></div>
+            </div>
+          </aside>
+
+          <div class="ex-results">
+            <div class="pat-wrap">
+              <h3 class="f-label" id="fPat">Filter by Microsoft solution <span class="f-hint">Select one or more. Select again to clear.</span></h3>
+              <div class="pat-filter" id="patFilter" role="group" aria-labelledby="fPat"></div>
+            </div>
+            <div class="im-wrap">
+              <h3 class="f-label" id="fImpact">Filter by impact <span class="f-hint">Value levers from the Executive Guide. Select one or more.</span></h3>
+              <div class="im-filter" id="impactFilter" role="group" aria-labelledby="fImpact"></div>
+            </div>
+            <div class="ex-bar">
+              <p class="ex-count" id="resultCount" role="status" aria-live="polite"></p>
+              <p class="ex-summary" id="resultSummary"></p>
+              <button type="button" class="link-btn" id="clearFilters" hidden>Reset filters</button>
+              <button type="button" class="link-btn ex-jump" id="jumpFilters">Edit filters</button>
+            </div>
+            <div class="uc-scroll" id="ucScroll" tabindex="0" role="region" aria-label="Matching use cases">
+              <div class="uc-grid" id="ucGrid"></div>
+              <button type="button" class="btn ghost small uc-more-btn" id="moreBtn" hidden>Show more</button>
+            </div>
+            <details class="ex-sources"><summary>About these sources</summary><p class="fine ex-fine">Life Sciences scenario cards (IDs starting LS-, BIO- and MED-) and the line-of-business overviews were drafted for this Navigator and are illustrative conversation starters, not Microsoft product commitments. Business Applications cards describe first-party Dynamics 365, Power Platform and Copilot Studio capabilities from the Microsoft Business Applications Pre-Built Agents and Capabilities report; preview features may change. Cards marked “Adapted from the healthcare Navigator” are industry-neutral patterns carried over from the healthcare version and should be validated for life sciences. Pattern 5 cards describe Microsoft developer tools, drawn from Microsoft Learn documentation; the custom solution scenarios are illustrative designs. Agentic team architectures are illustrative designs. Commercial and medical use cases should use only approved content and consented data, and promotional content must go through your medical, legal and regulatory review. GxP-relevant uses require validation, data-integrity controls and quality unit approval before production use. All cards should be validated before customer use.</p></details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AGENTIC TEAMS -->
+    <section class="screen" id="teams" data-label="Agent Teams" tabindex="-1" aria-labelledby="teamsTitle">
+      <div class="container wide tm-wrap">
+        <header class="section-head tm-head reveal">
+          <p class="eyebrow">Agentic teams</p>
+          <h2 id="teamsTitle">Meet the agentic team for your line of business</h2>
+          <p class="section-lede">One assist agent is the front door. It calls specialist agents that handle the routine coordination autonomously in your business systems, so people focus on the approvals, exceptions and judgment that need real expertise. Choose a line of business to see its team.</p>
+        </header>
+
+        <div class="tm reveal">
+          <aside class="tm-side glass" aria-label="Choose a line of business">
+            <h3 class="f-label" id="tmLobLabel">Line of business <span class="f-hint" id="tmCount"></span></h3>
+            <select class="f-select" id="tmSelect" aria-labelledby="tmLobLabel"></select>
+            <div class="domain-list" id="tmList" role="radiogroup" aria-labelledby="tmLobLabel"></div>
+          </aside>
+          <article class="tm-panel" id="tmPanel" aria-live="polite"></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAKEAWAY -->
+    <section class="screen takeaway" id="takeaway" data-label="Takeaway" tabindex="-1" aria-labelledby="takeawayTitle">
+      <div class="container wide">
+        <header class="tk-head center reveal">
+          <p class="eyebrow">The big idea</p>
+          <h2 id="takeawayTitle" class="tk-quote">AI is not a single product. It is a flow from <span class="c1">assistants</span>, to <span class="c2">delegation</span>, to <span class="c3">agentic teams</span>, to <span class="c4">intelligence inside the applications you already use</span>, to <span class="c5">custom solutions your own developers build</span>.</h2>
+        </header>
+
+        <div class="tk-summary reveal" id="tkSummary" role="list" aria-label="Summary of the big ideas">
+          <article class="tk-card" role="listitem">
+            <span class="tk-num" aria-hidden="true">1</span>
+            <h3>Five patterns, one evolution</h3>
+            <p>Each pattern changes who does the work, from AI beside one person to AI built into the systems of record, and to AI your own developers build.</p>
+            <ol class="tk-chain" id="tkChain" aria-label="The five patterns"></ol>
+          </article>
+          <article class="tk-card" role="listitem">
+            <span class="tk-num" aria-hidden="true">2</span>
+            <h3>The operating model shifts toward people</h3>
+            <p>The right pattern moves your people to the high-value work that needs real expertise, and gives AI the low-value work that still needs coordination.</p>
+          </article>
+          <article class="tk-card" role="listitem">
+            <span class="tk-num" aria-hidden="true">3</span>
+            <h3>Agentic teams make it repeatable</h3>
+            <p>One assist agent is the front door. Specialist agents work across your business systems, and humans stay in the loop for approvals and exceptions.</p>
+          </article>
+        </div>
+
+        <div class="tk-next reveal">
+          <p class="tk-label">Your next step</p>
+          <div class="tk-actions">
+            <a class="tk-cta secondary" href="#explorer">
+              <span class="tk-cta-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></span>
+              <span class="tk-cta-copy"><b>Find the use cases for your accounts</b><span>Filter by biopharma or medtech, line of business and AI pattern, then pick two or three to explore with your customer.</span></span>
+              <span class="tk-cta-go">Open the explorer<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+            </a>
+          </div>
+          <nav class="tk-links" aria-label="Keep exploring">
+            <a href="#explorer">Explore the use cases</a>
+            <a href="#journey">Revisit the AI patterns</a>
+            <a href="#resources">Browse learning resources</a>
+            <a href="#top">Back to the start</a>
+          </nav>
+        </div>
+        <p class="fine disclaimer reveal">This guide is an illustrative conversation tool, not a Microsoft product commitment or a statement of results. Product names, capabilities, and availability change; confirm current details with your Microsoft account team and Microsoft documentation. Qualified professionals remain accountable for scientific, clinical, quality, safety and regulatory decisions, and AI used in GxP-regulated processes must be validated and governed under your quality system.</p>
+      </div>
+    </section>
+
+    <!-- RESOURCES -->
+    <section class="screen" id="resources" data-label="Learning Resources" tabindex="-1" aria-labelledby="resourcesTitle">
+      <div class="container wide">
+        <header class="section-head reveal">
+          <p class="eyebrow">Keep learning</p>
+          <h2 id="resourcesTitle">Learning resources to accelerate your AI journey</h2>
+          <p class="section-lede">Hand-picked guides, frameworks and templates. Each card tells you in one sentence what is inside.</p>
+        </header>
+        <div class="rs-bar reveal">
+          <label class="sr-only" for="rsSearch">Search resources</label>
+          <input class="f-search rs-search" type="search" id="rsSearch" placeholder="Search resources, for example governance, training or Copilot" autocomplete="off">
+          <p class="rs-count" id="rsCount" role="status" aria-live="polite"></p>
+        </div>
+        <div class="rs-grid" id="rsGrid"></div>
+      </div>
+    </section>
+  </main>
+
+  <nav class="dock" id="dock" aria-label="Slide navigation" data-index="0">
+    <button type="button" class="dock-btn" id="prevSlide" aria-label="Previous slide">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+    </button>
+    <ol class="dock-dots" id="dockDots"></ol>
+    <button type="button" class="dock-btn" id="nextSlide" aria-label="Next slide">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+    </button>
+  </nav>
+  <p class="sr-only" id="slideStatus" role="status" aria-live="polite"></p>
+  <button type="button" class="to-top" id="toTop" aria-label="Back to top" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+
+  <dialog class="tm-dialog" id="tmDialog" aria-label="Architecture diagram">
+    <button type="button" class="tm-dclose" id="tmDialogClose" aria-label="Close diagram">Close</button>
+    <img id="tmDialogImg" alt="">
+  </dialog>
+
+  <script src="lobs.js?v=1"></script>
+  <script src="usecases.js?v=1"></script>
+  <script src="catalog.js?v=1"></script>
+  <script src="teams.js?v=1"></script>
+  <script src="resources.js?v=1"></script>
+  <script src="app.js?v=1"></script>
+</body>
+</html>
