@@ -14,6 +14,7 @@
   const TECH_LINKS = {
     'Microsoft 365 Copilot': LEARN + 'microsoft-365/copilot/microsoft-365-copilot-overview',
     'Copilot Cowork': LEARN + 'microsoft-365/copilot/cowork/',
+    'Microsoft Autopilot': 'https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/',
     'Researcher and Analyst agents': LEARN + 'microsoft-365/copilot/researcher-agent',
     'Work IQ': 'https://jgardn22.github.io/work-iq-whiteboard/',
     'Microsoft Graph': LEARN + 'graph/overview',
