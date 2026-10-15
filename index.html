@@ -35,7 +35,6 @@
       <a href="#top" data-nav="top">Welcome</a>
       <a href="#journey" data-nav="journey">AI Patterns</a>
       <a href="#explorer" data-nav="explorer">Use Case Explorer</a>
-      <a href="#teams" data-nav="teams">Agent Teams</a>
       <a href="#takeaway" data-nav="takeaway">Takeaway</a>
       <a href="#resources" data-nav="resources">Learning Resources</a>
     </nav>
@@ -160,26 +159,6 @@
       </div>
     </section>
 
-    <!-- AGENTIC TEAMS -->
-    <section class="screen" id="teams" data-label="Agent Teams" tabindex="-1" aria-labelledby="teamsTitle">
-      <div class="container wide tm-wrap">
-        <header class="section-head tm-head reveal">
-          <p class="eyebrow">Agentic teams</p>
-          <h2 id="teamsTitle">Meet the agentic team for your line of business</h2>
-          <p class="section-lede">One assist agent is the front door. It calls specialist agents that handle the routine coordination autonomously in your business systems, so people focus on the approvals, exceptions and judgment that need real expertise. Choose a line of business to see its team.</p>
-        </header>
-
-        <div class="tm reveal">
-          <aside class="tm-side glass" aria-label="Choose a line of business">
-            <h3 class="f-label" id="tmLobLabel">Line of business <span class="f-hint" id="tmCount"></span></h3>
-            <select class="f-select" id="tmSelect" aria-labelledby="tmLobLabel"></select>
-            <div class="domain-list" id="tmList" role="radiogroup" aria-labelledby="tmLobLabel"></div>
-          </aside>
-          <article class="tm-panel" id="tmPanel" aria-live="polite"></article>
-        </div>
-      </div>
-    </section>
-
     <!-- TAKEAWAY -->
     <section class="screen takeaway" id="takeaway" data-label="Takeaway" tabindex="-1" aria-labelledby="takeawayTitle">
       <div class="container wide">
@@ -257,15 +236,11 @@
   <p class="sr-only" id="slideStatus" role="status" aria-live="polite"></p>
   <button type="button" class="to-top" id="toTop" aria-label="Back to top" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
 
-  <dialog class="tm-dialog" id="tmDialog" aria-label="Architecture diagram">
-    <button type="button" class="tm-dclose" id="tmDialogClose" aria-label="Close diagram">Close</button>
-    <img id="tmDialogImg" alt="">
-  </dialog>
+
 
   <script src="lobs.js?v=1"></script>
   <script src="usecases.js?v=1"></script>
   <script src="catalog.js?v=1"></script>
-  <script src="teams.js?v=1"></script>
   <script src="resources.js?v=1"></script>
   <script src="app.js?v=1"></script>
 </body>
