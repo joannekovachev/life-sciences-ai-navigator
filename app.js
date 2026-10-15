@@ -1100,7 +1100,7 @@
   setActive(0);
   buildExplorer();
   buildLadder();
-  
+  buildTeams();
   buildResources();
   initSlides();
 })();
