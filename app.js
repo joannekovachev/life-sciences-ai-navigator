@@ -16,7 +16,8 @@
     'Copilot Cowork': LEARN + 'microsoft-365/copilot/cowork/',
     'Microsoft Autopilot': 'https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/',
     'Researcher and Analyst agents': LEARN + 'microsoft-365/copilot/researcher-agent',
-    'Work IQ': 'https://jgardn22.github.io/work-iq-whiteboard/',
+    'Work IQ': LEARN + 'microsoft-iq/',
+    'Microsoft IQ': LEARN + 'microsoft-iq/',
     'Microsoft Graph': LEARN + 'graph/overview',
     'Copilot Studio': LEARN + 'microsoft-copilot-studio/',
     'Multi-agent orchestration': LEARN + 'microsoft-copilot-studio/authoring-add-other-agents',
@@ -88,7 +89,7 @@
         'Project status and decision packages',
         'An always-on agent that tracks follow-ups, deadlines and recurring issues, and tells the owner what needs attention'
       ],
-      tech: ['Copilot Cowork', 'Microsoft Autopilot', 'Researcher and Analyst agents', 'Microsoft 365 Copilot', 'Work IQ', 'Microsoft Graph'],
+      tech: ['Copilot Cowork', 'Microsoft Autopilot', 'Researcher and Analyst agents', 'Microsoft 365 Copilot', 'Work IQ', 'Microsoft IQ', 'Microsoft Graph'],
       value: 'The unit of value moves from minutes saved to hours or days of finished work returned, so leaders review more and draft less.',
       role: 'Manager of AI contributors',
       aiRole: 'Contributor owning assigned work',
