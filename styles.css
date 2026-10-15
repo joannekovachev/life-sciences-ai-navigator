@@ -998,3 +998,6 @@ a.chip-link { text-decoration: none; color: inherit; cursor: pointer; }
 a.chip-link::after { content: '\2197'; margin-left: 5px; font-size: .8em; opacity: .7; }
 a.chip-link:hover { text-decoration: underline; border-color: currentColor; }
 a.chip-link:focus-visible { outline: 3px solid var(--s1); outline-offset: 2px; }
+
+/* The card-wide title overlay (z-index 2) was swallowing clicks on links inside the open pattern details */
+.stage.active > .stage-more { z-index: 3; }
