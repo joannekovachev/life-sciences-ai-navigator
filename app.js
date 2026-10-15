@@ -31,7 +31,7 @@
     'Dynamics 365': LEARN + 'dynamics365/',
     'Power Apps': LEARN + 'power-apps/',
     'Power BI': LEARN + 'power-bi/',
-    'Azure AI services': LEARN + 'azure/foundry/',
+    'AI Builder': LEARN + 'ai-builder/overview',
     'GitHub Copilot': 'https://docs.github.com/en/copilot',
     'VS Code': 'https://code.visualstudio.com/docs',
     'Azure MCP Server': LEARN + 'azure/developer/azure-mcp-server/overview',
@@ -138,7 +138,7 @@
         'Low-code apps with AI actions in Power Apps',
         'Exception handling in ERP and finance workflows'
       ],
-      tech: ['Dynamics 365', 'Power Apps', 'Power BI', 'Power Automate', 'Azure AI services'],
+      tech: ['Dynamics 365', 'Power Apps', 'Power BI', 'Power Automate', 'AI Builder'],
       value: 'Fast time to value with limited change management, because people stay in familiar tools. Better consistency, fewer clicks, and cleaner data.',
       role: 'Application user',
       aiRole: 'Intelligence inside the app',
